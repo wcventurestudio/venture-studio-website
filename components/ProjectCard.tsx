@@ -2,9 +2,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Project } from '@/lib/projects'
 
+const DEDICATED_ROUTES: Record<string, string> = {
+  summit: '/work/summit',
+}
+
 export default function ProjectCard({ project }: { project: Project }) {
+  const href = DEDICATED_ROUTES[project.slug] ?? `/work/${project.slug}`
+
   return (
-    <Link href={`/work/${project.slug}`} className="project-card block rounded-2xl bg-fg group">
+    <Link href={href} className="project-card block rounded-2xl bg-fg group">
       <div className="relative aspect-4/3 rounded-2xl overflow-hidden">
         <Image
           src={project.image}

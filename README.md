@@ -28,6 +28,10 @@ This is the official website for Williams Venture Studio, built with **Next.js 1
     - [Step 5 — Commit](#step-5--commit)
     - [Step 6 — Push](#step-6--push)
     - [Quick Reference: Terminal Commands](#quick-reference-terminal-commands)
+  - [Reporting Problems \& Proposing Changes with GitHub](#reporting-problems--proposing-changes-with-github)
+    - [Issues — Flagging Something That Needs Attention](#issues--flagging-something-that-needs-attention)
+    - [Pull Requests — Proposing a Change for Review](#pull-requests--proposing-a-change-for-review)
+    - [Workflow Summary](#workflow-summary)
 
 ---
 
@@ -364,4 +368,108 @@ git push
 
 ---
 
-*For questions about the codebase, reach out to whoever set up the project.*
+## Reporting Problems & Proposing Changes with GitHub
+
+GitHub has two features built specifically for managing feedback and changes without everyone needing direct access to push code: **Issues** and **Pull Requests**. Think of Issues as a to-do list and Pull Requests as a review process before anything goes live.
+
+---
+
+### Issues — Flagging Something That Needs Attention
+
+An Issue is how you tell the team "something needs to change here." You do not need to know how to fix it — just describe the problem clearly and assign it to whoever should handle it.
+
+**When to open an Issue:**
+- A link is broken or goes to the wrong place
+- Text on a page is outdated, misspelled, or needs rewriting
+- A photo needs to be swapped out
+- Something looks wrong on mobile or in dark mode
+- A new section or page needs to be added
+
+**How to open an Issue:**
+
+1. Go to the repository on **github.com**.
+2. Click the **Issues** tab near the top of the page.
+3. Click the green **New Issue** button.
+4. Give it a clear, specific title. Good examples:
+   - `Summit page: update speaker list for 2026`
+   - `Contact page: LinkedIn URL is broken`
+   - `Home page: hero tagline needs to be updated`
+5. In the description box, explain what needs to change and where. Include the URL of the page if relevant, and paste in the new text or a photo if you have it ready. The more specific, the easier it is for whoever fixes it.
+6. On the right side, use **Assignees** to tag the person responsible for fixing it.
+7. Use **Labels** to categorize it — for example, `content` for text/image updates, `bug` for something broken, `enhancement` for new features. You can create custom labels in the repo settings.
+8. Click **Submit new issue**.
+
+The issue will stay open until someone closes it, which they should do once the fix has been pushed live. Team members can leave comments on the issue to ask questions or give updates.
+
+---
+
+### Pull Requests — Proposing a Change for Review
+
+A Pull Request (PR) is how you propose a set of changes to the codebase and ask for someone to review them before they go live. This is the right workflow any time the change is significant enough that a second pair of eyes is warranted — for example, a new page, a redesign of a section, or anything that touches multiple files.
+
+The idea is: instead of pushing directly to the `main` branch (which immediately deploys to the live site), you create a separate branch, make your changes there, and open a PR asking someone to review and approve before it gets merged.
+
+**Step 1 — Create a new branch**
+
+In VS Code, click the **branch name** in the bottom-left corner of the window (it will say `main` by default). A dropdown will appear at the top of the screen. Click **Create new branch** and give it a short descriptive name with no spaces, for example:
+
+```
+update-summit-speakers
+```
+or
+```
+add-fellowships-page
+```
+
+You are now on your own branch. Changes you make here will not affect the live site until the PR is merged.
+
+**Step 2 — Make your changes**
+
+Edit the relevant files as described in the [Editing Content](#editing-content) section. Run `npm run dev` to preview everything locally.
+
+**Step 3 — Commit and push your branch**
+
+Follow the same commit steps from the [Publishing Changes with Git](#publishing-changes-with-git) section. When you click **Sync Changes** / **Push**, VS Code will push your branch to GitHub (not `main`).
+
+**Step 4 — Open a Pull Request on GitHub**
+
+1. Go to the repository on **github.com**. You will usually see a yellow banner saying **"Your recently pushed branch: compare & pull request"** — click that button. If you don't see it, go to the **Pull Requests** tab and click **New pull request**.
+2. Make sure the **base** branch (the destination) is set to `main` and the **compare** branch is your new branch.
+3. Give the PR a clear title matching what you changed, for example: `Update Summit speaker list and stats for 2026`.
+4. In the description, explain what you changed and why. If this PR closes an open Issue, write `Closes #12` (replacing 12 with the Issue number) — GitHub will automatically link them and close the Issue when the PR is merged.
+5. Under **Reviewers** on the right, tag anyone who should approve the changes before they go live.
+6. Click **Create pull request**.
+
+**Step 5 — Review and merge**
+
+The assigned reviewer will look at the changes, leave comments if anything needs adjusting, and approve the PR when it looks good. Once approved, click **Merge pull request** → **Confirm merge**. The changes will be merged into `main` and the site will redeploy automatically within about a minute.
+
+After merging, you can safely delete the branch using the button that appears on the PR page.
+
+---
+
+### Workflow Summary
+
+```
+Spot a problem or content that needs updating
+        ↓
+Open an Issue on GitHub describing what needs to change
+        ↓
+Assign it to the right person
+        ↓
+That person creates a new branch, makes the changes, previews locally
+        ↓
+They push the branch and open a Pull Request referencing the Issue
+        ↓
+A teammate reviews and approves the PR
+        ↓
+PR is merged into main → site redeploys live automatically
+        ↓
+Issue is closed
+```
+
+This workflow ensures nothing goes live without being intentional about it, and creates a clear history of what changed, when, and why.
+
+---
+
+*For questions about the codebase, reach out to Henrique Rodrigues.*

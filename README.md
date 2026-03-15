@@ -92,7 +92,7 @@ npm run dev
 4. After a few seconds you will see a message like:
 
 ```
-▲ Next.js 15.x.x
+▲ Next.js 16.x.x
 - Local: http://localhost:3000
 ```
 

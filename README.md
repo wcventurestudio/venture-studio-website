@@ -1,6 +1,6 @@
 # Williams Venture Studio — Website
 
-This is the official website for Williams Venture Studio, built with **Next.js 15** and **Tailwind CSS v4**. This guide explains how everything is organized, how to edit content without touching complex code, and how to preview and publish your changes.
+This is the official website for Williams Venture Studio, built with **Next.js 16** and **Tailwind CSS v4**. This guide explains how everything is organized, how to edit content without touching complex code, and how to preview and publish your changes.
 
 ---
 

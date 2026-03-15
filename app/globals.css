@@ -1,26 +1,131 @@
+/* ── Tailwind v4: single import replaces all @tailwind directives ── */
 @import "tailwindcss";
 
+/* ── Dark mode: class-based, applied via html.dark ── */
+@variant dark (&:where(.dark, .dark *));
+
+/* ── Design tokens ── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Light mode */
+  --bg:        #ffffff;
+  --bg-nav:    rgba(255, 255, 255, 0.85);
+  --fg:        #0a0a0a;
+  --fg-muted:  #888880;
+  --fg-faint:  #bbbbb0;
+  --border:    rgba(0, 0, 0, 0.08);
+  --pill-bg:   rgba(15, 15, 15, 0.75);
+  --pill-fg:   #ffffff;
 }
 
+.dark {
+  /* Dark mode */
+  --bg:        #0a0a0a;
+  --bg-nav:    rgba(10, 10, 10, 0.85);
+  --fg:        #f0efe9;
+  --fg-muted:  #777770;
+  --fg-faint:  #444440;
+  --border:    rgba(255, 255, 255, 0.08);
+  --pill-bg:   rgba(240, 239, 233, 0.15);
+  --pill-fg:   #f0efe9;
+}
+
+/* ── Expose tokens to Tailwind's utility engine ── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg:       var(--bg);
+  --color-bg-nav:   var(--bg-nav);
+  --color-fg:       var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-faint: var(--fg-faint);
+  --color-border:   var(--border);
+  --color-pill-bg:  var(--pill-bg);
+  --color-pill-fg:  var(--pill-fg);
+
+  --font-display:   var(--font-display);
+  --font-body:      var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── Base resets & defaults ── */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Component styles ── */
+@layer components {
+  /* Fade-up animation */
+  .animate-fade-up {
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .animate-fade-up-delay-1 { animation-delay: 0.08s; }
+  .animate-fade-up-delay-2 { animation-delay: 0.18s; }
+  .animate-fade-up-delay-3 { animation-delay: 0.30s; }
+  .animate-fade-up-delay-4 { animation-delay: 0.44s; }
+
+  /* Project cards */
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .project-card img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Nav underline */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0; height: 1px;
+    background: currentColor;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  /* Mobile menu */
+  .mobile-menu {
+    animation: slideDown 0.25s ease both;
+  }
+
+  /* Theme toggle */
+  .theme-toggle {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--fg-muted);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+  }
+  .theme-toggle:hover {
+    color: var(--fg);
+    background: var(--border);
+  }
 }

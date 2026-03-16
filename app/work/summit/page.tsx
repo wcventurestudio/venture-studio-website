@@ -31,6 +31,11 @@ const PANELS = [
     track: 'Consumer Fintech',
     description: 'Reimagining financial access, payments, and wealth for the next generation of consumers.',
   },
+  {
+    time: '5:00 PM',
+    track: 'Networking',
+    description: 'Open floor networking with speakers, founders, and fellow attendees. Light refreshments provided.',
+  }, 
 ]
 
 const PAST_SPEAKERS = [
@@ -211,11 +216,11 @@ export default function SummitPage() {
       </section>
 
       {/* ── Schedule / Panels ── */}
-      <section className="border-t border-border px-6 md:px-10 py-24">
+      <section className="border-t border-border px-6 md:px-10 pt-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">April 25 \u2014 Schedule</p>
+          <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">April 25 {'\u2014'} Schedule</p>
           <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-tight tracking-tighter text-fg mb-16">
-            Five Panels.
+            Five Panels,
             <br />
             One Day.
           </h2>
@@ -224,7 +229,7 @@ export default function SummitPage() {
             {PANELS.map((panel, i) => (
               <div
                 key={panel.track}
-                className="group grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/[0.02] transition-colors px-2 -mx-2 rounded-lg items-start"
+                className="group grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/0.02 transition-colors px-2 -mx-2 rounded-lg items-start"
               >
                 <p className="text-xs tracking-widest uppercase text-fg/30 pt-1">{panel.time}</p>
                 <div>
@@ -233,26 +238,8 @@ export default function SummitPage() {
                   </h3>
                   <p className="text-sm text-fg/50 leading-relaxed">{panel.description}</p>
                 </div>
-                <div className="hidden md:flex items-center justify-center w-8 h-8 rounded-full border border-border text-fg/20 group-hover:text-fg group-hover:border-fg/20 transition-colors mt-1">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
               </div>
             ))}
-
-            {/* Networking cap */}
-            <div className="grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-b border-border px-2 -mx-2 items-start">
-              <p className="text-xs tracking-widest uppercase text-fg/30 pt-1">5:00 PM</p>
-              <div>
-                <h3 className="font-display text-2xl md:text-3xl font-black text-fg mb-1">
-                  Networking
-                </h3>
-                <p className="text-sm text-fg/50 leading-relaxed">
-                  Open floor networking with speakers, founders, and fellow attendees. Light refreshments provided.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -262,14 +249,10 @@ export default function SummitPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
-              <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">Who Has Spoken</p>
               <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-tight tracking-tighter text-fg">
                 Past Speakers
               </h2>
             </div>
-            <p className="text-sm text-fg/40 max-w-xs leading-relaxed">
-              A glimpse at the practitioners and investors who have joined us in previous years.
-            </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
@@ -310,7 +293,7 @@ export default function SummitPage() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                Saturday, April 25 \u2014 11:00 AM to 6:00 PM
+                Saturday, April 25 {'\u2014'} 11:00 AM to 6:00 PM
               </div>
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />

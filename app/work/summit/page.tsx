@@ -121,7 +121,7 @@ export default function SummitPage() {
             </div>
             <div>
               <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Time</p>
-              <p className="text-base text-bg/80">11:00 AM \u2013 6:00 PM</p>
+              <p className="text-base text-bg/80">11:00 AM {'\u2192'} 6:00 PM</p>
             </div>
             <div>
               <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Format</p>
@@ -135,7 +135,7 @@ export default function SummitPage() {
               className="inline-flex items-center gap-3 bg-bg text-fg text-sm tracking-widest uppercase px-8 py-4 rounded-full hover:bg-bg/90 transition-colors"
             >
               Register Now
-              <span>\u2192</span>
+              <span>{'\u2192'}</span>
             </a>
           </div>
         </div>
@@ -326,7 +326,7 @@ export default function SummitPage() {
               className="inline-flex items-center gap-3 bg-fg text-bg text-sm tracking-widest uppercase px-8 py-4 rounded-full hover:bg-fg/90 transition-colors"
             >
               Request an Invite
-              <span>\u2192</span>
+              <span>{'\u2192'}</span>
             </a>
           </div>
         </div>

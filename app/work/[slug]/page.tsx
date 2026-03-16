@@ -32,7 +32,7 @@ export default async function ProjectPage({
           >
             Work
           </Link>
-          <span className="text-fg/20 text-xs">\u2192</span>
+          <span className="text-fg/20 text-xs">{'\u2192'}</span>
           <span className="text-xs tracking-widest uppercase text-fg/60">{project.title}</span>
         </div>
 

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -136,7 +135,9 @@ export default function SummitPage() {
 
           <div className="mt-10 animate-fade-up animate-fade-up-delay-3">
             <a
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSelyB71bqBAPMhyMke9rvbOBCPPmz99VbTtJTpoYd9BUUshyg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-bg text-fg text-sm tracking-widest uppercase px-8 py-4 rounded-full hover:bg-bg/90 transition-colors"
             >
               Register Now
@@ -188,7 +189,7 @@ export default function SummitPage() {
 
         {/* Photo grid */}
         <div className="mt-16 grid grid-cols-3 gap-3">
-          <div className="relative aspect-[3/4] rounded-xl overflow-hidden col-span-1">
+          <div className="relative aspect-3/4 rounded-xl overflow-hidden col-span-1">
             <Image
               src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&q=80"
               alt="Summit moment"
@@ -196,7 +197,7 @@ export default function SummitPage() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-[3/4] rounded-xl overflow-hidden col-span-1 mt-8">
+          <div className="relative aspect-3/4 rounded-xl overflow-hidden col-span-1 mt-8">
             <Image
               src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=600&q=80"
               alt="Summit moment"
@@ -204,7 +205,7 @@ export default function SummitPage() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-[3/4] rounded-xl overflow-hidden col-span-1">
+          <div className="relative aspect-3/4 rounded-xl overflow-hidden col-span-1">
             <Image
               src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80"
               alt="Summit moment"
@@ -226,7 +227,7 @@ export default function SummitPage() {
           </h2>
 
           <div className="space-y-0">
-            {PANELS.map((panel, i) => (
+            {PANELS.map((panel) => (
               <div
                 key={panel.track}
                 className="group grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/0.02 transition-colors px-2 -mx-2 rounded-lg items-start"
@@ -258,7 +259,7 @@ export default function SummitPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {PAST_SPEAKERS.map((speaker) => (
               <div key={speaker.name} className="group">
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-fg/5">
+                <div className="relative aspect-3/4 rounded-2xl overflow-hidden mb-4 bg-fg/5">
                   <Image
                     src={speaker.image}
                     alt={speaker.name}
@@ -305,10 +306,12 @@ export default function SummitPage() {
               </div>
             </div>
             <a
-              href="mailto:hello@williams.studio"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSelyB71bqBAPMhyMke9rvbOBCPPmz99VbTtJTpoYd9BUUshyg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-fg text-bg text-sm tracking-widest uppercase px-8 py-4 rounded-full hover:bg-fg/90 transition-colors"
             >
-              Request an Invite
+              Register Now
               <span>{'\u2192'}</span>
             </a>
           </div>

@@ -52,7 +52,7 @@ export default async function ProjectPage({
         </div>
 
         {/* Hero image */}
-        <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-16 animate-fade-up animate-fade-up-delay-2">
+        <div className="relative aspect-video rounded-2xl overflow-hidden mb-16 animate-fade-up animate-fade-up-delay-2">
           <Image
             src={project.image}
             alt={project.title}

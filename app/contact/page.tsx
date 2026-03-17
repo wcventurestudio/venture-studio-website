@@ -21,12 +21,7 @@ export default function ContactPage() {
         <div className="space-y-8 animate-fade-up animate-fade-up-delay-1">
           <div>
             <p className="text-xs tracking-widest uppercase text-fg/30 mb-2">Email</p>
-            <a
-              href="wcventurestudio@gmail.com"
-              className="text-lg text-fg/70 hover:text-fg transition-colors nav-link"
-            >
-              hello@williams.studio
-            </a>
+              wcventurestudio@gmail.com
           </div>
 
           <div>

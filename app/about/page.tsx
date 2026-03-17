@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-const CAPABILITIES = [
+const EXPLORING = [
   'Brand Strategy',
   'Event Production',
   'Digital Experiences',
@@ -33,9 +33,9 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h3 className="text-xs tracking-widest uppercase text-fg/30 mb-5">Capabilities</h3>
+            <h3 className="text-xs tracking-widest uppercase text-fg/30 mb-5">EXLPORING</h3>
             <ul className="space-y-3">
-              {CAPABILITIES.map((cap) => (
+              {EXPLORING.map((cap) => (
                 <li key={cap} className="text-sm text-fg/60 flex items-center gap-3">
                   <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
                   {cap}

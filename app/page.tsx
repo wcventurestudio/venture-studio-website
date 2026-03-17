@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
+import Link from "next/link";
 import { projects } from "@/lib/projects";
 
 export default function Home() {
@@ -10,8 +11,8 @@ export default function Home() {
 
       {/* Hero */}
       <section className="pt-32 pb-16 px-6 md:px-10 text-center">
-        <p className="text-sm tracking-widest uppercase text-fg/50 mb-4 animate-fade-up">
-          ✦ Williams
+        <p className="text-sm tracking-widest uppercase text-fg/50 mb-4 animate-fade-up pb-6">
+        <a href="https://www.williams.edu/" target="_blank" rel="noopener noreferrer">✦ Williams</a>
         </p>
         <h1
           className="font-display text-[clamp(4rem,15vw,11rem)] font-black leading-[0.9] tracking-tighter text-fg animate-fade-up animate-fade-up-delay-1"

@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
-import Link from "next/link";
 import { projects } from "@/lib/projects";
 
 export default function Home() {

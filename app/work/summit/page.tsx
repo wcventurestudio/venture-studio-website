@@ -39,47 +39,47 @@ const PANELS = [
 
 const PAST_SPEAKERS = [
   {
-    name: 'Alex Rivera',
-    title: 'General Partner',
-    firm: 'Sequoia Capital',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    name: 'Mariam Naficy',
+    title: 'Founder & Co-CEO',
+    firm: 'Minted',
+    image: '/images/summit/past-speakers/Mariam-Naficy.jpg',
   },
   {
-    name: 'Priya Nair',
-    title: 'Co-founder & CEO',
-    firm: 'Luminary Health',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
+    name: 'Brad Svrluga',
+    title: 'Co-founder & General Partner',
+    firm: 'Primary Venture Partners',
+    image: '/images/summit/past-speakers/Brad-Svrluga.jpg',
   },
   {
-    name: 'Jordan Lee',
+    name: 'Margaret (Peggy) Kim',
+    title: 'Founder & CEO',
+    firm: 'FUTURE NOW Media Foundation, Inc.',
+    image: '/images/summit/past-speakers/Margaret-Kim.jpg',
+  },
+  {
+    name: 'JC Bahr-de Stefano',
     title: 'Partner',
-    firm: 'Andreessen Horowitz',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
+    firm: 'Better Tomorrow Ventures',
+    image: '/images/summit/past-speakers/JC-Bahr-de-Stefano.png',
   },
   {
-    name: 'Maya Okafor',
-    title: 'Founder',
-    firm: 'Clarity Finance',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80',
+    name: 'Bo Peabody',
+    title: 'Managing Member',
+    firm: 'Cornice Ventures',
+    image: '/images/summit/past-speakers/Bo-Peabody.avif',
   },
   {
-    name: 'Daniel Cho',
-    title: 'Managing Director',
-    firm: 'Tiger Global',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
-  },
-  {
-    name: 'Sofia Martínez',
-    title: 'VP of Product',
-    firm: 'Stripe',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
+    name: 'Mike Curtin',
+    title: 'CEO',
+    firm: 'DC Central Kitchen',
+    image: '/images/summit/past-speakers/Mike-Curtin.jpg',
   },
 ]
 
 const STATS = [
-  { value: '500+', label: 'Attendees' },
-  { value: '30+', label: 'Speakers' },
-  { value: '5', label: 'Industry Panels' },
+  { value: '200+', label: 'Attendees' },
+  { value: '20+', label: 'Speakers' },
+  { value: '6', label: 'Industry Panels' },
   { value: '3rd', label: 'Annual Summit' },
 ]
 

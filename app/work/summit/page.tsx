@@ -79,7 +79,7 @@ const PAST_SPEAKERS = [
 const STATS = [
   { value: '200+', label: 'Attendees' },
   { value: '20+', label: 'Speakers' },
-  { value: '6', label: 'Industry Panels' },
+  { value: '5', label: 'Industry Panels' },
   { value: '3rd', label: 'Annual Summit' },
 ]
 

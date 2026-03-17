@@ -125,8 +125,8 @@ The social media links are defined at the top:
 ```tsx
 const SOCIAL_LINKS = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/company/williams-venture-studio/' },
-  { label: 'Instagram', href: 'https://www.instagram.com/williamsentrepreneurs' },
-  { label: 'Twitter', href: 'https://x.com/ephlabs' },
+  { label: 'Instagram', href: 'https://www.instagram.com/wcventurestudio' },
+  { label: 'Twitter', href: 'https://x.com/wcventurestudio' },
 ]
 ```
 

@@ -317,7 +317,6 @@ export default function SummitPage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </main>
   )

@@ -6,7 +6,7 @@ const SOCIAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="px-6 md:px-10 py-10 mt-24 border-t border-border">
+    <footer className="px-6 md:px-10 py-10 mt-12 border-t border-border">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <p className="text-xs text-fg/30 tracking-widest uppercase">2026</p>

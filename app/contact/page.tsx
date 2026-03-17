@@ -31,6 +31,8 @@ export default function ContactPage() {
                 <a
                   key={label}
                   href={href}
+                  target='_blank'
+                  rel="noopener noreferrer"
                   className="text-sm text-fg/50 hover:text-fg transition-colors nav-link w-fit"
                 >
                   {label} ↗

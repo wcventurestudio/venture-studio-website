@@ -121,7 +121,7 @@ export default function SummitPage() {
           <div className="mt-10 flex flex-col sm:flex-row gap-6 sm:gap-12 animate-fade-up animate-fade-up-delay-2">
             <div>
               <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Date</p>
-              <p className="text-base text-bg/80">Saturday, April 25, 2026</p>
+              <p className="text-base text-bg/80">Saturday, May 2, 2026</p>
             </div>
             <div>
               <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Time</p>
@@ -219,7 +219,7 @@ export default function SummitPage() {
       {/* ── Schedule / Panels ── */}
       <section className="border-t border-border px-6 md:px-10 pt-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">April 25 {'\u2014'} Schedule</p>
+          <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">May 2 {'\u2014'} Schedule</p>
           <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-tight tracking-tighter text-fg mb-16">
             Five Panels,
             <br />
@@ -265,7 +265,7 @@ export default function SummitPage() {
                     alt={speaker.name}
                     fill
                     sizes="(max-width: 640px) 50vw, 33vw"
-                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    className="object-cover"
                   />
                 </div>
                 <p className="text-sm font-medium text-fg">{speaker.name}</p>
@@ -280,7 +280,7 @@ export default function SummitPage() {
       <section id="register" className="border-t border-border px-6 md:px-10 py-24">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">April 25, 2026</p>
+            <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">May 2, 2026</p>
             <h2 className="font-display text-[clamp(2.5rem,7vw,5rem)] font-black leading-[0.95] tracking-tighter text-fg">
               Come to
               <br />
@@ -294,7 +294,7 @@ export default function SummitPage() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                Saturday, April 25 {'\u2014'} 11:00 AM to 6:00 PM
+                Saturday, May 2 {'\u2014'} 11:00 AM to 6:00 PM
               </div>
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />

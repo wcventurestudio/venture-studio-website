@@ -1,6 +1,6 @@
 # Williams Venture Studio — Website
 
-This is the official website for Williams Venture Studio, built with **Next.js 15** and **Tailwind CSS v4**. This guide explains how everything is organized, how to edit content without touching complex code, and how to preview and publish your changes.
+This is the official website for Williams Venture Studio, built with **Next.js 16** and **Tailwind CSS v4**. This guide explains how everything is organized, how to edit content without touching complex code, and how to preview and publish your changes.
 
 ---
 
@@ -92,7 +92,7 @@ npm run dev
 4. After a few seconds you will see a message like:
 
 ```
-▲ Next.js 15.x.x
+▲ Next.js 16.x.x
 - Local: http://localhost:3000
 ```
 
@@ -125,8 +125,8 @@ The social media links are defined at the top:
 ```tsx
 const SOCIAL_LINKS = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/company/williams-venture-studio/' },
-  { label: 'Instagram', href: 'https://www.instagram.com/williamsentrepreneurs' },
-  { label: 'Twitter', href: 'https://x.com/ephlabs' },
+  { label: 'Instagram', href: 'https://www.instagram.com/wcventurestudio' },
+  { label: 'Twitter', href: 'https://x.com/wcventurestudio' },
 ]
 ```
 

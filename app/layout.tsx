@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, DM_Sans } from 'next/font/google'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 
 // ── Fonts ──────────────────────────────────────────────────────────────────
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -31,51 +30,56 @@ const PANELS = [
     track: 'Consumer Fintech',
     description: 'Reimagining financial access, payments, and wealth for the next generation of consumers.',
   },
+  {
+    time: '5:00 PM',
+    track: 'Networking',
+    description: 'Open floor networking with speakers, founders, and fellow attendees. Light refreshments provided.',
+  }, 
 ]
 
 const PAST_SPEAKERS = [
   {
-    name: 'Alex Rivera',
-    title: 'General Partner',
-    firm: 'Sequoia Capital',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    name: 'Mariam Naficy',
+    title: 'Founder & Co-CEO',
+    firm: 'Minted',
+    image: '/images/summit/past-speakers/Mariam-Naficy.jpg',
   },
   {
-    name: 'Priya Nair',
-    title: 'Co-founder & CEO',
-    firm: 'Luminary Health',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
+    name: 'Brad Svrluga',
+    title: 'Co-founder & General Partner',
+    firm: 'Primary Venture Partners',
+    image: '/images/summit/past-speakers/Brad-Svrluga.jpg',
   },
   {
-    name: 'Jordan Lee',
+    name: 'Margaret (Peggy) Kim',
+    title: 'Founder & CEO',
+    firm: 'FUTURE NOW Media Foundation, Inc.',
+    image: '/images/summit/past-speakers/Margaret-Kim.jpg',
+  },
+  {
+    name: 'JC Bahr-de Stefano',
     title: 'Partner',
-    firm: 'Andreessen Horowitz',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
+    firm: 'Better Tomorrow Ventures',
+    image: '/images/summit/past-speakers/JC-Bahr-de-Stefano.png',
   },
   {
-    name: 'Maya Okafor',
-    title: 'Founder',
-    firm: 'Clarity Finance',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80',
+    name: 'Bo Peabody',
+    title: 'Managing Member',
+    firm: 'Cornice Ventures',
+    image: '/images/summit/past-speakers/Bo-Peabody.avif',
   },
   {
-    name: 'Daniel Cho',
-    title: 'Managing Director',
-    firm: 'Tiger Global',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
-  },
-  {
-    name: 'Sofia Martínez',
-    title: 'VP of Product',
-    firm: 'Stripe',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
+    name: 'Mike Curtin',
+    title: 'CEO',
+    firm: 'DC Central Kitchen',
+    image: '/images/summit/past-speakers/Mike-Curtin.jpg',
   },
 ]
 
 const STATS = [
-  { value: '500+', label: 'Attendees' },
-  { value: '30+', label: 'Speakers' },
-  { value: '5', label: 'Industry Panels' },
+  { value: '200+', label: 'Attendees' },
+  { value: '20+', label: 'Speakers' },
+  { value: '6', label: 'Industry Panels' },
   { value: '3rd', label: 'Annual Summit' },
 ]
 
@@ -121,7 +125,7 @@ export default function SummitPage() {
             </div>
             <div>
               <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Time</p>
-              <p className="text-base text-bg/80">11:00 AM \u2013 6:00 PM</p>
+              <p className="text-base text-bg/80">11:00 AM {'\u2192'} 6:00 PM</p>
             </div>
             <div>
               <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Format</p>
@@ -131,11 +135,13 @@ export default function SummitPage() {
 
           <div className="mt-10 animate-fade-up animate-fade-up-delay-3">
             <a
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSelyB71bqBAPMhyMke9rvbOBCPPmz99VbTtJTpoYd9BUUshyg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-bg text-fg text-sm tracking-widest uppercase px-8 py-4 rounded-full hover:bg-bg/90 transition-colors"
             >
               Register Now
-              <span>\u2192</span>
+              <span>{'\u2192'}</span>
             </a>
           </div>
         </div>
@@ -183,7 +189,7 @@ export default function SummitPage() {
 
         {/* Photo grid */}
         <div className="mt-16 grid grid-cols-3 gap-3">
-          <div className="relative aspect-[3/4] rounded-xl overflow-hidden col-span-1">
+          <div className="relative aspect-3/4 rounded-xl overflow-hidden col-span-1">
             <Image
               src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&q=80"
               alt="Summit moment"
@@ -191,7 +197,7 @@ export default function SummitPage() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-[3/4] rounded-xl overflow-hidden col-span-1 mt-8">
+          <div className="relative aspect-3/4 rounded-xl overflow-hidden col-span-1 mt-8">
             <Image
               src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=600&q=80"
               alt="Summit moment"
@@ -199,7 +205,7 @@ export default function SummitPage() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-[3/4] rounded-xl overflow-hidden col-span-1">
+          <div className="relative aspect-3/4 rounded-xl overflow-hidden col-span-1">
             <Image
               src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80"
               alt="Summit moment"
@@ -211,20 +217,20 @@ export default function SummitPage() {
       </section>
 
       {/* ── Schedule / Panels ── */}
-      <section className="border-t border-border px-6 md:px-10 py-24">
+      <section className="border-t border-border px-6 md:px-10 pt-24">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">April 25 \u2014 Schedule</p>
+          <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">April 25 {'\u2014'} Schedule</p>
           <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-tight tracking-tighter text-fg mb-16">
-            Five Panels.
+            Five Panels,
             <br />
             One Day.
           </h2>
 
           <div className="space-y-0">
-            {PANELS.map((panel, i) => (
+            {PANELS.map((panel) => (
               <div
                 key={panel.track}
-                className="group grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/[0.02] transition-colors px-2 -mx-2 rounded-lg items-start"
+                className="group grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/0.02 transition-colors px-2 -mx-2 rounded-lg items-start"
               >
                 <p className="text-xs tracking-widest uppercase text-fg/30 pt-1">{panel.time}</p>
                 <div>
@@ -233,26 +239,8 @@ export default function SummitPage() {
                   </h3>
                   <p className="text-sm text-fg/50 leading-relaxed">{panel.description}</p>
                 </div>
-                <div className="hidden md:flex items-center justify-center w-8 h-8 rounded-full border border-border text-fg/20 group-hover:text-fg group-hover:border-fg/20 transition-colors mt-1">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
               </div>
             ))}
-
-            {/* Networking cap */}
-            <div className="grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-b border-border px-2 -mx-2 items-start">
-              <p className="text-xs tracking-widest uppercase text-fg/30 pt-1">5:00 PM</p>
-              <div>
-                <h3 className="font-display text-2xl md:text-3xl font-black text-fg mb-1">
-                  Networking
-                </h3>
-                <p className="text-sm text-fg/50 leading-relaxed">
-                  Open floor networking with speakers, founders, and fellow attendees. Light refreshments provided.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -262,20 +250,16 @@ export default function SummitPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
-              <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">Who Has Spoken</p>
               <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-tight tracking-tighter text-fg">
                 Past Speakers
               </h2>
             </div>
-            <p className="text-sm text-fg/40 max-w-xs leading-relaxed">
-              A glimpse at the practitioners and investors who have joined us in previous years.
-            </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {PAST_SPEAKERS.map((speaker) => (
               <div key={speaker.name} className="group">
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-fg/5">
+                <div className="relative aspect-3/4 rounded-2xl overflow-hidden mb-4 bg-fg/5">
                   <Image
                     src={speaker.image}
                     alt={speaker.name}
@@ -310,7 +294,7 @@ export default function SummitPage() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                Saturday, April 25 \u2014 11:00 AM to 6:00 PM
+                Saturday, April 25 {'\u2014'} 11:00 AM to 6:00 PM
               </div>
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
@@ -322,16 +306,17 @@ export default function SummitPage() {
               </div>
             </div>
             <a
-              href="mailto:hello@williams.studio"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSelyB71bqBAPMhyMke9rvbOBCPPmz99VbTtJTpoYd9BUUshyg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-fg text-bg text-sm tracking-widest uppercase px-8 py-4 rounded-full hover:bg-fg/90 transition-colors"
             >
-              Request an Invite
-              <span>\u2192</span>
+              Register Now
+              <span>{'\u2192'}</span>
             </a>
           </div>
         </div>
       </section>
-
       <Footer />
     </main>
   )

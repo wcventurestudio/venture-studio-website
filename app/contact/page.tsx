@@ -2,9 +2,9 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 const SOCIAL_LINKS = [
-  { label: 'LinkedIn', href: '#' },
-  { label: 'Instagram', href: '#' },
-  { label: 'Twitter / X', href: '#' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/williams-venture-studio/' },
+  { label: 'Instagram', href: 'https://www.instagram.com/wcventurestudio' },
+  { label: 'Twitter / X', href: 'https://x.com/wcventurestudio' },
 ]
 
 export default function ContactPage() {

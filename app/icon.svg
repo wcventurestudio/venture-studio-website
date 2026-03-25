@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st3{fill:#FFFFFF;}
+</style>
+
+<rect width="800" height="800" fill="black" rx="50" ry="50"/>
+
+<!-- Change scale(1.0) to make the W bigger or smaller -->
+<g transform="translate(400,400) scale(2.2) translate(-400,-390)">
+	<g>
+		<g>
+			<g>
+				<g>
+					<path class="st3" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round" d="M389.55,502.9h-59.96l-88.68-205.8h59.34l55.96,136.2l53.75-136.2h57.4L389.55,502.9z M337.27,491.23
+						h44.21l68.98-182.46H417.9l-61.47,155.78l-64-155.78h-33.78L337.27,491.23z"/>
+				</g>
+				<g>
+					<path class="st3" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round" d="M476.29,502.9h-59.85l-89.57-205.8h52.61l20.04,54.2l-10.95,4.05l-17.23-46.58h-26.67l75.61,173.72
+						l81.37-185.39h57.43L476.29,502.9z M429.2,491.23h39.2l73.41-182.46h-32.53L429.2,491.23z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

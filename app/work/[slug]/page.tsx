@@ -32,7 +32,7 @@ export default async function ProjectPage({
           >
             Work
           </Link>
-          <span className="text-fg/20 text-xs">\u2192</span>
+          <span className="text-fg/20 text-xs">{'\u2192'}</span>
           <span className="text-xs tracking-widest uppercase text-fg/60">{project.title}</span>
         </div>
 
@@ -52,7 +52,7 @@ export default async function ProjectPage({
         </div>
 
         {/* Hero image */}
-        <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-16 animate-fade-up animate-fade-up-delay-2">
+        <div className="relative aspect-video rounded-2xl overflow-hidden mb-16 animate-fade-up animate-fade-up-delay-2">
           <Image
             src={project.image}
             alt={project.title}

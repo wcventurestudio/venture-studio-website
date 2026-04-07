@@ -190,12 +190,12 @@ export default function SummitPage() {
                 {/* Photo grid */}
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-5 gap-2">
                     {/* LEFT SIDE */}
-                    <div className="md:col-span-3 grid grid-rows-2 gap-2">
-                        <div className="relative aspect-16/9 rounded-xl overflow-hidden">
+                    <div className="md:col-span-3 grid grid-cols-1 grid-rows-2 gap-2">
+                        <div className="relative aspect-[16/9] rounded-xl overflow-hidden">
                             <Image src="/images/summit/DSC00432.JPEG" fill className="object-cover" alt="" />
                         </div>
 
-                        <div className="relative aspect-16/9 rounded-xl overflow-hidden">
+                        <div className="relative aspect-[16/9] rounded-xl overflow-hidden">
                             <Image
                                 src="/images/summit/DSC00491.JPEG"
                                 fill
@@ -206,7 +206,7 @@ export default function SummitPage() {
                     </div>
 
                     {/* RIGHT SIDE */}
-                    <div className="relative md:col-span-2 rounded-xl overflow-hidden">
+                    <div className="relative aspect-[16/9] md:aspect-auto md:col-span-2 rounded-xl overflow-hidden">
                         <Image src="/images/summit/DSC00373.JPEG" fill className="object-cover" alt="" />
                     </div>
                 </div>
@@ -226,7 +226,9 @@ export default function SummitPage() {
                                 key={panel.track}
                                 className="group grid grid-cols-[9rem_1fr] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/0.02 transition-colors px-2 -mx-2 rounded-lg items-start"
                             >
-                                <p className="text-sm uppercase text-fg/40 pt-1 whitespace-nowrap font-bold">{panel.time}</p>
+                                <p className="text-sm uppercase text-fg/40 pt-1 whitespace-nowrap font-bold">
+                                    {panel.time}
+                                </p>
 
                                 <div>
                                     <h3 className="font-display text-2xl md:text-3xl font-black text-fg mb-1">

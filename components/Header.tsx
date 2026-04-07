@@ -48,14 +48,14 @@ function MoonIcon() {
   )
 }
 
-const NAV_LINKS = ['Work', 'About', 'Contact'] as const
+const NAV_LINKS = ['Summit', 'Spotlights', 'About'] as const
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const { theme, toggle } = useTheme()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-6 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 px-6 md:px-18 py-6 flex items-center justify-between">
       <div className="absolute inset-0 bg-bg/75 backdrop-blur-md" />
 
       <Link

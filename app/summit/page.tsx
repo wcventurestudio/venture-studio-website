@@ -125,7 +125,7 @@ export default function SummitPage() {
                         </div>
                         <div>
                             <p className="text-sm tracking-widest uppercase text-bg/40 mb-1">Time</p>
-                            <p className="text-base text-bg/80">11:00 AM {"\u2192"} 6:00 PM</p>
+                            <p className="text-base text-bg/80">11:00 AM {"\u2192"} 4:00 PM</p>
                         </div>
                         <div>
                             <p className="text-sm tracking-widest uppercase text-bg/40 mb-1">Format</p>

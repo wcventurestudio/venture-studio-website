@@ -12,21 +12,6 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'AI Series',
-    subtitle: 'Weekly Hackathons',
-    category: 'Events',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
-    slug: 'ai-series',
-    about:
-      'Williams Venture Studio hosts weekly mini-hackathons on campus focused on AI/ML. These sessions bring together students from across disciplines to build, experiment, and ship real projects in a single afternoon. No experience required — just curiosity and a laptop.',
-    details: [
-      { label: 'Format', value: 'Weekly on-campus sessions' },
-      { label: 'Focus', value: 'AI / ML' },
-      { label: 'Open to', value: 'All Williams students' },
-    ],
-  },
-  {
-    id: '2',
     title: 'Summit',
     subtitle: 'Annual Industry Conference',
     category: 'Events',
@@ -36,21 +21,7 @@ export const projects: Project[] = [
     details: [],
   },
   {
-    id: '3',
-    title: 'Meetings',
-    subtitle: 'Studio Sessions',
-    category: 'Studio',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80',
-    slug: 'meetings',
-    about:
-      'Regular studio meetings where members share what they are working on, workshop ideas, and hold each other accountable. Part pitch practice, part peer mentorship, part community.',
-    details: [
-      { label: 'Cadence', value: 'Weekly' },
-      { label: 'Format', value: 'Open floor + workshops' },
-    ],
-  },
-  {
-    id: '4',
+    id: '2',
     title: 'Spotlights',
     subtitle: 'Celebrating our People',
     category: 'Reading',

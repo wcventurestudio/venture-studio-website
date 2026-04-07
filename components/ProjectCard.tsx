@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { Project } from '@/lib/projects'
 
 const DEDICATED_ROUTES: Record<string, string> = {
-  summit: '/work/summit',
+  summit: '/summit',
+  spotlights: '/spotlights',
 }
 
 export default function ProjectCard({ project }: { project: Project }) {

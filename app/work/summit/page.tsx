@@ -6,36 +6,36 @@ import Footer from "@/components/Footer";
 
 const PANELS = [
     {
-        time: "11:00 AM",
-        track: "Energy",
-        description: "The future of energy infrastructure, climate tech, and the capital flowing into the transition.",
+        time: "10:20 – 10:50 AM",
+        track: "Light Breakfast",
     },
     {
-        time: "12:00 PM",
-        track: "Venture Capital",
-        description:
-            "How top VCs are deploying capital, what they look for in founders, and where the market is heading.",
+        time: "11:00 – 11:50 AM",
+        track: "Panel 1: SaaS and AI",
+        description: "Exploring the future of AI-native products, scaling software businesses, and what comes next.",
     },
     {
-        time: "1:30 PM",
-        track: "AI / SaaS",
-        description: "Building and scaling AI-native products — from zero to enterprise, and what comes next.",
+        time: "12:00 – 12:50 PM",
+        track: "Panel 2: Venture Capital and Small Businesses",
+        description: "How investors evaluate opportunities, support founders, and navigate today’s market.",
     },
     {
-        time: "2:30 PM",
-        track: "Biotech & Life Sciences",
-        description: "Breakthroughs in therapeutics, longevity, and the new generation of biotech startups.",
+        time: "1:00 – 1:30 PM",
+        track: "Catered Lunch",
     },
     {
-        time: "3:30 PM",
-        track: "Consumer Fintech",
-        description: "Reimagining financial access, payments, and wealth for the next generation of consumers.",
+        time: "1:30 – 2:20 PM",
+        track: "Panel 3: Biotech & Life Sciences",
+        description: "Innovations in biotech, healthcare, and the next generation of life sciences startups.",
     },
     {
-        time: "5:00 PM",
-        track: "Networking",
-        description:
-            "Open floor networking with speakers, founders, and fellow attendees. Light refreshments provided.",
+        time: "2:30 – 3:20 PM",
+        track: "Panel 4: Energy",
+        description: "The future of energy, sustainability, and the technologies driving global change.",
+    },
+    {
+        time: "3:30 – 4:20 PM",
+        track: "Student Venture Showcase",
     },
 ];
 
@@ -79,9 +79,9 @@ const PAST_SPEAKERS = [
 ];
 
 const STATS = [
-    { value: "200+", label: "Attendees" },
-    { value: "20+", label: "Speakers" },
-    { value: "6", label: "Industry Panels" },
+    { value: "100+", label: "Attendees" },
+    { value: "10+", label: "Speakers" },
+    { value: "4", label: "Industry Panels" },
     { value: "3rd", label: "Annual Summit" },
 ];
 
@@ -120,15 +120,15 @@ export default function SummitPage() {
 
                     <div className="mt-10 flex flex-col sm:flex-row gap-6 sm:gap-12 animate-fade-up animate-fade-up-delay-2">
                         <div>
-                            <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Date</p>
+                            <p className="text-sm tracking-widest uppercase text-bg/40 mb-1">Date</p>
                             <p className="text-base text-bg/80">Saturday, May 2, 2026</p>
                         </div>
                         <div>
-                            <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Time</p>
+                            <p className="text-sm tracking-widest uppercase text-bg/40 mb-1">Time</p>
                             <p className="text-base text-bg/80">11:00 AM {"\u2192"} 6:00 PM</p>
                         </div>
                         <div>
-                            <p className="text-xs tracking-widest uppercase text-bg/40 mb-1">Format</p>
+                            <p className="text-sm tracking-widest uppercase text-bg/40 mb-1">Format</p>
                             <p className="text-base text-bg/80">Panels + Networking</p>
                         </div>
                     </div>
@@ -160,27 +160,27 @@ export default function SummitPage() {
             </section>
 
             {/* ── About / Mission ── */}
-            <section className="px-6 md:px-10 py-24 max-w-5xl mx-auto">
+            <section className="px-6 md:px-10 py-12 max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
                     <div>
                         <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">Why We Do This</p>
                         <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-[0.95] tracking-tighter text-fg">
-                            Where the Next Generation Meets the People Building It
+                            Where Ambition Meets Experience
                         </h2>
                     </div>
                     <div className="space-y-5 pt-2">
-                        <p className="text-fg/60 leading-relaxed text-sm">
-                            The Summit was born from a simple belief: that students with bold ideas deserve direct
-                            access to the investors, founders, and operators who turned their own ideas into reality.
-                            Not through a recruiter, not through a cold email — face to face.
+                        <p className="text-fg/60 leading-relaxed text-md">
+                            The Summit exists to close the gap between those with ideas and those who have built them.
+                            It brings students face to face with founders, investors, and operators who have shaped
+                            industries — and are still doing it.
                         </p>
-                        <p className="text-fg/40 leading-relaxed text-sm">
-                            Each year we convene Williams students, alumni, and leading practitioners across five
-                            industries for a day of honest conversation, real mentorship, and the kind of connections
-                            that change the trajectory of a career. Speaker panels run through the afternoon, followed
-                            by an open networking session where you set the agenda.
+                        <p className="text-fg/40 leading-relaxed text-md">
+                            Across a full day of panels and discussion, we explore how companies are built, how capital
+                            moves, and how decisions are made at the highest level. The day ends not with a conclusion,
+                            but with connection — an open networking session where conversations turn into
+                            opportunities.
                         </p>
-                        <p className="text-fg/40 leading-relaxed text-sm">
+                        <p className="text-fg/40 leading-relaxed text-md">
                             This is not a lecture. It is a room full of people who want to help you figure out what
                             comes next.
                         </p>
@@ -188,15 +188,20 @@ export default function SummitPage() {
                 </div>
 
                 {/* Photo grid */}
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div className="mt-16 grid grid-cols-1 md:grid-cols-5 gap-2">
                     {/* LEFT SIDE */}
-                    <div className="md:col-span-3 grid grid-rows-2 gap-4">
-                        <div className="relative aspect-16/10 rounded-xl overflow-hidden">
+                    <div className="md:col-span-3 grid grid-rows-2 gap-2">
+                        <div className="relative aspect-16/9 rounded-xl overflow-hidden">
                             <Image src="/images/summit/DSC00432.JPEG" fill className="object-cover" alt="" />
                         </div>
 
-                        <div className="relative aspect-16/10 rounded-xl overflow-hidden">
-                            <Image src="/images/summit/DSC00491.JPEG" fill className="object-cover" alt="" />
+                        <div className="relative aspect-16/9 rounded-xl overflow-hidden">
+                            <Image
+                                src="/images/summit/DSC00491.JPEG"
+                                fill
+                                className="object-cover object-bottom"
+                                alt=""
+                            />
                         </div>
                     </div>
 
@@ -208,22 +213,21 @@ export default function SummitPage() {
             </section>
 
             {/* ── Schedule / Panels ── */}
-            <section className="border-t border-border px-6 md:px-10 pt-24">
+            <section className="border-t border-border px-6 md:px-10 pt-12">
                 <div className="max-w-5xl mx-auto">
                     <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">May 2 {"\u2014"} Schedule</p>
                     <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-tight tracking-tighter text-fg mb-16">
-                        Five Panels,
-                        <br />
-                        One Day.
+                        Five Panels, One Day.
                     </h2>
 
                     <div className="space-y-0">
                         {PANELS.map((panel) => (
                             <div
                                 key={panel.track}
-                                className="group grid grid-cols-[6rem_1fr] md:grid-cols-[8rem_1fr_auto] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/0.02 transition-colors px-2 -mx-2 rounded-lg items-start"
+                                className="group grid grid-cols-[9rem_1fr] gap-4 md:gap-8 py-7 border-t border-border hover:bg-fg/0.02 transition-colors px-2 -mx-2 rounded-lg items-start"
                             >
-                                <p className="text-xs tracking-widest uppercase text-fg/30 pt-1">{panel.time}</p>
+                                <p className="text-sm uppercase text-fg/40 pt-1 whitespace-nowrap font-bold">{panel.time}</p>
+
                                 <div>
                                     <h3 className="font-display text-2xl md:text-3xl font-black text-fg mb-1">
                                         {panel.track}
@@ -237,7 +241,7 @@ export default function SummitPage() {
             </section>
 
             {/* ── Past Speakers ── */}
-            <section className="px-6 md:px-10 py-24">
+            <section className="px-6 md:px-10 py-12">
                 <div className="max-w-5xl mx-auto">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
                         <div>
@@ -260,7 +264,7 @@ export default function SummitPage() {
                                     />
                                 </div>
                                 <p className="text-sm font-medium text-fg">{speaker.name}</p>
-                                <p className="text-xs text-fg/40 mt-0.5">
+                                <p className="text-sm text-fg/40 mt-0.5">
                                     {speaker.title}, {speaker.firm}
                                 </p>
                             </div>
@@ -270,8 +274,8 @@ export default function SummitPage() {
             </section>
 
             {/* ── Register CTA ── */}
-            <section id="register" className="border-t border-border px-6 md:px-10 py-24">
-                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <section id="register" className="border-t border-border px-6 md:px-10 py-12">
+                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                     <div>
                         <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">May 2, 2026</p>
                         <h2 className="font-display text-[clamp(2.5rem,7vw,5rem)] font-black leading-[0.95] tracking-tighter text-fg">
@@ -287,11 +291,11 @@ export default function SummitPage() {
                         <div className="space-y-3">
                             <div className="flex items-center gap-3 text-sm text-fg/60">
                                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                                Saturday, May 2 {"\u2014"} 11:00 AM to 6:00 PM
+                                Saturday, May 2 {"\u2014"} 11:00 AM to 4:00 PM
                             </div>
                             <div className="flex items-center gap-3 text-sm text-fg/60">
                                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                                Five speaker panels across key industries
+                                Four speaker panels across key industries
                             </div>
                             <div className="flex items-center gap-3 text-sm text-fg/60">
                                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />

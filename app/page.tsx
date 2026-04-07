@@ -31,8 +31,14 @@ export default function Home() {
                     </span>
                     <span className="text-fg/20">·</span>
 
-                    <a href="YOUR_GROUPME_LINK" target="_blank" rel="noopener noreferrer">
-                        Join GroupMe ↗
+                    <a
+                        href="https://groupme.com/join_group/114233689/i6y2if7w"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-sm text-fg/50 hover:text-fg transition-colors"
+                    >
+                        Join GroupMe
+                        <img src="/groupmesymbol.png" alt="GroupMe" className="w-4 h-4 rounded-sm" />
                     </a>
                 </div>
             </section>

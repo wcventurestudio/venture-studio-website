@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/projects";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -38,7 +39,7 @@ export default function Home() {
                         className="flex items-center gap-1.5 text-sm text-fg/50 hover:text-fg transition-colors"
                     >
                         Join GroupMe
-                        <img src="/groupmesymbol.png" alt="GroupMe" className="w-4 h-4 rounded-sm" />
+                        <Image src="/groupmesymbol.png" alt="GroupMe" width={16} height={16} className="rounded-sm" />
                     </a>
                 </div>
             </section>

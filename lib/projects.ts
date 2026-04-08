@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: 'Summit',
     subtitle: 'Annual Industry Conference',
     category: 'Events',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+    image: '/images/summit/DSC00478.JPEG',
     slug: 'summit',
     about: '',
     details: [],
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     title: 'Spotlights',
     subtitle: 'Celebrating our People',
     category: 'Reading',
-    image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+    image: '/images/summit/DSC00379.JPEG',
     slug: 'spotlights',
     about:
       'Spotlights celebrates the writing and thinking coming out of our community. We surface the essays, frameworks, and ideas that members are putting into the world — starting with the work that deserves a wider audience.',

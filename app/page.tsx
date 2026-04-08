@@ -21,7 +21,7 @@ export default function Home() {
                     <br />
                     Studio
                 </h1>
-                <p className="mt-8 text-sm text-fg/40 tracking-wide max-w-xs mx-auto leading-relaxed animate-fade-up animate-fade-up-delay-2">
+                <p className="mt-8 text-sm text-fg/80 tracking-wide max-w-xs mx-auto leading-relaxed animate-fade-up animate-fade-up-delay-2">
                     Exploring startups, venture, and providing access to resources and mentorship.
                 </p>
                 {/* Meetings pill */}

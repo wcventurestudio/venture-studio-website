@@ -97,7 +97,7 @@ export default function SummitPage() {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto">
-          <p className="text-sm tracking-widest uppercase text-white/50 mb-6 animate-fade-up">
+          <p className="text-sm tracking-widest uppercase text-white/80 mb-6 animate-fade-up">
             ✦ Williams Venture Studio Presents
           </p>
 
@@ -109,15 +109,15 @@ export default function SummitPage() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-6 sm:gap-12 animate-fade-up animate-fade-up-delay-2">
             <div>
-              <p className="text-sm tracking-widest uppercase text-white/40 mb-1">Date</p>
+              <p className="text-sm tracking-widest uppercase text-white/80 mb-1">Date</p>
               <p className="text-base text-white">Saturday, May 2, 2026</p>
             </div>
             <div>
-              <p className="text-sm tracking-widest uppercase text-white/40 mb-1">Time</p>
+              <p className="text-sm tracking-widest uppercase text-white/80 mb-1">Time</p>
               <p className="text-base text-white">11:00 AM → 4:00 PM</p>
             </div>
             <div>
-              <p className="text-sm tracking-widest uppercase text-white/40 mb-1">Format</p>
+              <p className="text-sm tracking-widest uppercase text-white/80 mb-1">Format</p>
               <p className="text-base text-white">Panels + Networking</p>
             </div>
           </div>
@@ -158,18 +158,18 @@ export default function SummitPage() {
             </h2>
           </div>
           <div className="space-y-5 pt-2">
-            <p className="text-fg/60 leading-relaxed text-md">
+            <p className="text-fg/80 leading-relaxed text-md">
               The Summit exists to close the gap between those with ideas and those who have built
               them. It brings students face to face with founders, investors, and operators who have
               shaped industries — and are still doing it.
             </p>
-            <p className="text-fg/40 leading-relaxed text-md">
+            <p className="text-fg/60 leading-relaxed text-md">
               Across a full day of panels and discussion, we explore how companies are built, how
               capital moves, and how decisions are made at the highest level. The day ends not with
               a conclusion, but with connection — an open networking session where conversations turn
               into opportunities.
             </p>
-            <p className="text-fg/40 leading-relaxed text-md">
+            <p className="text-fg/60 leading-relaxed text-md">
               This is not a lecture. It is a room full of people who want to help you figure out
               what comes next.
             </p>
@@ -209,14 +209,14 @@ export default function SummitPage() {
                 key={panel.track}
                 className="group grid grid-cols-[9rem_1fr] gap-4 md:gap-8 py-7 border-t border-border transition-colors px-2 -mx-2 rounded-lg items-start"
               >
-                <p className="text-sm uppercase text-fg/40 pt-1 whitespace-nowrap font-bold">
+                <p className="text-sm uppercase text-fg/60 pt-1 whitespace-nowrap font-bold">
                   {panel.time}
                 </p>
                 <div>
                   <h3 className="font-display text-2xl md:text-3xl font-black text-fg mb-1">
                     {panel.track}
                   </h3>
-                  <p className="text-sm text-fg/50 leading-relaxed">{panel.description}</p>
+                  <p className="text-sm text-fg/60 leading-relaxed">{panel.description}</p>
                 </div>
               </div>
             ))}
@@ -245,7 +245,7 @@ export default function SummitPage() {
                   />
                 </div>
                 <p className="text-sm font-medium text-fg">{speaker.name}</p>
-                <p className="text-sm text-fg/40 mt-0.5">
+                <p className="text-sm text-fg/60 mt-0.5">
                   {speaker.title}, {speaker.firm}
                 </p>
               </div>
@@ -258,15 +258,15 @@ export default function SummitPage() {
       <section id="register" className="border-t border-border px-6 md:px-10 py-12">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">May 2, 2026</p>
+            <p className="text-xs tracking-widest uppercase text-fg/60 mb-5">May 2, 2026</p>
             <h2 className="font-display text-[clamp(2.5rem,7vw,5rem)] font-black leading-[0.95] tracking-tighter text-fg">
               Come to
               <br />
               the Summit.
             </h2>
           </div>
-          <div className="space-y-6">
-            <p className="text-fg/50 leading-relaxed text-sm">
+          <div className="space-y-4">
+            <p className="text-fg leading-relaxed text-sm">
               Spots are limited. Register to secure your place at the table.
             </p>
             <div className="space-y-3">

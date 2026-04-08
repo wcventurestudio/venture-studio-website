@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { Project } from '@/lib/projects'
 
 const DEDICATED_ROUTES: Record<string, string> = {
-  summit: '/work/summit',
+  summit: '/summit',
+  spotlights: '/spotlights',
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -21,8 +22,8 @@ export default function ProjectCard({ project }: { project: Project }) {
           priority={project.id === '1' || project.id === '2'}
         />
 
-        {/* Dark gradient overlay — always subtle, more on hover */}
-        <div className="absolute inset-0 bg-linear-to-t from-fg/80 via-fg/10 to-transparent opacity-70" />
+        {/* Always-dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-70" />
 
         {/* Category pill */}
         <div className="absolute top-4 left-4">
@@ -33,15 +34,21 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         {/* Title */}
         <div className="absolute bottom-5 left-5 right-5">
-          <h3 className="font-display text-2xl md:text-3xl font-black leading-tight text-bg">
+          <h3 className="font-display text-2xl md:text-3xl font-black leading-tight text-white">
             {project.title}
           </h3>
         </div>
 
-        {/* Arrow — appears on hover */}
-        <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-bg/10 backdrop-blur-sm border border-bg/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 group-hover:translate-x-0">
+        {/* Arrow */}
+        <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-1 group-hover:translate-x-0">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <path d="M2 10L10 2M10 2H4M10 2V8" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path
+              d="M2 10L10 2M10 2H4M10 2V8"
+              stroke="white"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </div>
       </div>

@@ -6,17 +6,7 @@ import { useTheme } from './ThemeProvider'
 
 function SunIcon() {
   return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <circle cx="12" cy="12" r="5" />
       <line x1="12" y1="1" x2="12" y2="3" />
       <line x1="12" y1="21" x2="12" y2="23" />
@@ -32,31 +22,28 @@ function SunIcon() {
 
 function MoonIcon() {
   return (
-    <svg
-      width="15"
-      height="15"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
     </svg>
   )
 }
 
-const NAV_LINKS = ['Work', 'About', 'Contact'] as const
+const NAV_LINKS = [
+  { label: 'Summit', href: '/summit' },
+  { label: 'Spotlights', href: '/spotlights' },
+  { label: 'About', href: '/about' },
+] as const
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const { theme, toggle } = useTheme()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-6 flex items-center justify-between">
-      <div className="absolute inset-0 bg-bg/75 backdrop-blur-md" />
+    <header className="fixed top-0 left-0 right-0 z-50 px-6 md:px-18 py-6 flex items-center justify-between">
+      {/* Desktop: frosted glass */}
+      <div className="absolute inset-0 bg-bg/75 backdrop-blur-md hidden md:block" />
+      {/* Mobile: solid background */}
+      <div className="absolute inset-0 bg-bg md:hidden" />
 
       <Link
         href="/"
@@ -69,20 +56,21 @@ export default function Header() {
         <ThemeToggle theme={theme} toggle={toggle} />
         {NAV_LINKS.map((item) => (
           <Link
-            key={item}
-            href={`/${item.toLowerCase()}`}
+            key={item.label}
+            href={item.href}
             className="text-base tracking-widest uppercase text-fg/50 nav-link hover:text-fg transition-colors"
           >
-            {item}
+            {item.label}
           </Link>
         ))}
       </nav>
 
+      {/* Mobile controls — fixed width on the button so toggle doesn't shift */}
       <div className="relative z-10 flex md:hidden items-center gap-3">
         <ThemeToggle theme={theme} toggle={toggle} />
         <button
           type="button"
-          className="cursor-pointer text-base tracking-widest uppercase text-fg/50"
+          className="cursor-pointer text-base tracking-widest uppercase text-fg/50 w-16 text-right"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
@@ -92,35 +80,29 @@ export default function Header() {
         </button>
       </div>
 
-      {menuOpen && (
-        <nav
-          id="mobile-menu"
-          className="mobile-menu absolute top-full left-0 right-0 bg-bg border-b border-border py-6 flex flex-col gap-5 px-6 md:hidden"
-          aria-label="Mobile navigation"
-        >
-          {NAV_LINKS.map((item) => (
-            <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
-              className="text-sm tracking-widest uppercase text-fg/60 hover:text-fg transition-colors"
-              onClick={() => setMenuOpen(false)}
-            >
-              {item}
-            </Link>
-          ))}
-        </nav>
-      )}
+      {/* Mobile menu — always rendered, animated via max-height */}
+      <nav
+        id="mobile-menu"
+        className="mobile-menu absolute top-full left-0 right-0 bg-bg border-b border-border flex flex-col gap-5 px-6 md:hidden overflow-hidden transition-all duration-300 ease-in-out"
+        style={{ maxHeight: menuOpen ? '300px' : '0px', paddingTop: menuOpen ? '24px' : '0px', paddingBottom: menuOpen ? '24px' : '0px' }}
+        aria-label="Mobile navigation"
+      >
+        {NAV_LINKS.map((item) => (
+          <Link
+            key={item.label}
+            href={item.href}
+            className="text-sm tracking-widest uppercase text-fg/60 hover:text-fg transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            {item.label}
+          </Link>
+        ))}
+      </nav>
     </header>
   )
 }
 
-function ThemeToggle({
-  theme,
-  toggle,
-}: {
-  theme: 'light' | 'dark'
-  toggle: () => void
-}) {
+function ThemeToggle({ theme, toggle }: { theme: 'light' | 'dark'; toggle: () => void }) {
   return (
     <button
       type="button"

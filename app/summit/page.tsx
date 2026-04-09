@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const PANELS = [
-  { time: "10:20 – 10:50 AM", track: "Light Breakfast" },
+  { time: "10:00 – 10:50 AM", track: "Light Breakfast" },
   {
     time: "11:00 – 11:50 AM",
     track: "Panel 1: SaaS and AI",
@@ -272,7 +272,7 @@ export default function SummitPage() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                Saturday, May 2 — 11:00 AM to 4:00 PM
+                Saturday, May 2 — 11:00 AM to 4:30 PM
               </div>
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />

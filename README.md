@@ -205,9 +205,9 @@ The Summit has its own dedicated page because it has a unique design with a hero
 ```ts
 const PANELS = [
   {
-    time: '11:00 AM',
-    track: 'Energy',
-    description: 'The future of energy infrastructure...',
+    time: '11:00 – 11:50 AM',
+    track: 'Panel 1: SaaS and AI',
+    description: 'Exploring the future of AI-native products...',
   },
   ...
 ]

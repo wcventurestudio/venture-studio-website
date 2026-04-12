@@ -23,13 +23,7 @@ const PANELS = [
     description:
       "Innovations in biotech, healthcare, and the next generation of life sciences startups.",
   },
-  {
-    time: "2:30 – 3:20 PM",
-    track: "Panel 4: Energy",
-    description:
-      "The future of energy, sustainability, and the technologies driving global change.",
-  },
-  { time: "3:30 – 4:20 PM", track: "Student Venture Showcase" },
+  { time: "2:30 – 3:20 PM", track: "Student Venture Showcase" },
 ];
 
 const PAST_SPEAKERS = [
@@ -74,7 +68,7 @@ const PAST_SPEAKERS = [
 const STATS = [
   { value: "100+", label: "Attendees" },
   { value: "10+", label: "Speakers" },
-  { value: "4", label: "Industry Panels" },
+  { value: "3", label: "Industry Panels" },
   { value: "3rd", label: "Annual Summit" },
 ];
 
@@ -114,7 +108,7 @@ export default function SummitPage() {
             </div>
             <div>
               <p className="text-sm tracking-widest uppercase text-white/80 mb-1">Time</p>
-              <p className="text-base text-white">11:00 AM → 4:30 PM</p>
+              <p className="text-base text-white">11:00 AM → 3:30 PM</p>
             </div>
             <div>
               <p className="text-sm tracking-widest uppercase text-white/80 mb-1">Format</p>
@@ -201,7 +195,7 @@ export default function SummitPage() {
         <div className="max-w-5xl mx-auto">
           <p className="text-xs tracking-widest uppercase text-fg/30 mb-5">May 2 — Schedule</p>
           <h2 className="font-display text-[clamp(2rem,6vw,4rem)] font-black leading-tight tracking-tighter text-fg mb-16">
-            Five Panels, One Day.
+            Four Panels, One Day.
           </h2>
           <div className="space-y-0">
             {PANELS.map((panel) => (
@@ -272,11 +266,11 @@ export default function SummitPage() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                Saturday, May 2 — 11:00 AM to 4:30 PM
+                Saturday, May 2 — 11:00 AM to 3:30 PM
               </div>
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />
-                Four speaker panels across key industries
+                Three speaker panels across key industries
               </div>
               <div className="flex items-center gap-3 text-sm text-fg/60">
                 <span className="w-1 h-1 rounded-full bg-fg-muted inline-block" />

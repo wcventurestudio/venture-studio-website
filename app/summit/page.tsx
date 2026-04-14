@@ -84,6 +84,7 @@ export default function SummitPage() {
             src="/images/williamscollegexbanner.jpg"
             alt="Summit venue"
             fill
+            sizes="100vw"
             className="object-cover scale-110"
             priority
           />
@@ -173,19 +174,19 @@ export default function SummitPage() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-5 gap-2">
           <div className="md:col-span-3 grid grid-cols-1 grid-rows-2 gap-2">
             <div className="relative aspect-[16/9] rounded-xl overflow-hidden">
-              <Image src="/images/summit/DSC00432.JPEG" fill className="object-cover" alt="" />
+              <Image src="/images/summit/DSC00432.JPEG" fill sizes="(max-width: 768px) 100vw, 60vw" className="object-cover" alt="" />
             </div>
             <div className="relative aspect-[16/9] rounded-xl overflow-hidden">
               <Image
                 src="/images/summit/DSC00491.JPEG"
-                fill
+                fill sizes="(max-width: 768px) 100vw, 60vw"
                 className="object-cover object-bottom"
                 alt=""
               />
             </div>
           </div>
           <div className="relative aspect-[16/9] md:aspect-auto md:col-span-2 rounded-xl overflow-hidden">
-            <Image src="/images/summit/DSC00373.JPEG" fill className="object-cover" alt="" />
+            <Image src="/images/summit/DSC00373.JPEG" fill  sizes="(max-width: 768px) 100vw, 40vw" className="object-cover" alt="" />
           </div>
         </div>
       </section>

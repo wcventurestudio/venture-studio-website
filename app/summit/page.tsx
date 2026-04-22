@@ -12,9 +12,9 @@ const PANELS = [
   },
   {
     time: "12:00 – 12:50 PM",
-    track: "Panel 2: Venture Capital and Small Businesses",
+    track: "Panel 2: Local Business & Community",
     description:
-      "How investors evaluate opportunities, support founders, and navigate today's market.",
+      "Lessons from Berkshires founders and operators building durable businesses rooted in the communities they serve.",
   },
   { time: "1:00 – 1:30 PM", track: "Catered Lunch" },
   {
